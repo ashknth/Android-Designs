@@ -7,7 +7,7 @@
     android:background="#ECF1FA">
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/back_button"
         android:layout_width="38dp"
         android:layout_height="41dp"
         android:layout_marginStart="25dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/noun_back_1227057" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/profile_button"
         android:layout_width="44dp"
         android:layout_height="43dp"
         android:layout_marginStart="269dp"
@@ -26,12 +26,12 @@
         android:layout_marginEnd="25dp"
         android:background="#ECF1FA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/noun_user_1335326" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_feedback"
         android:layout_width="202dp"
         android:layout_height="30dp"
         android:layout_marginStart="25dp"
@@ -43,17 +43,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/doctor_img"
         android:layout_width="150dp"
         android:layout_height="147dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feedback"
         app:srcCompat="@drawable/clara_odding" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/tv_name"
         android:layout_width="165dp"
         android:layout_height="31dp"
         android:layout_marginStart="15dp"
@@ -61,31 +61,31 @@
         android:text="Dr Clara Odding"
         android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feedback" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/tv_address"
         android:layout_width="168dp"
         android:layout_height="45dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="3dp"
         android:text="2 Rue de Ermesinde         Frisange-Luxembbourg 3"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintStart_toEndOf="@+id/doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profession" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/tv_profession"
         android:layout_width="94dp"
         android:layout_height="23dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="3dp"
         android:text="Dentist"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintStart_toEndOf="@+id/doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/total_rating"
         style="?android:attr/ratingBarStyleIndicator"
         android:layout_width="147dp"
         android:layout_height="31dp"
@@ -97,20 +97,20 @@
         android:scaleX=".8"
         android:scaleY=".8"
         android:theme="@style/MyRatingBar"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintStart_toEndOf="@+id/doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/count_rating"
         android:layout_width="35dp"
         android:layout_height="25dp"
         android:layout_marginTop="8dp"
         android:text="(25)"
-        app:layout_constraintStart_toEndOf="@+id/ratingBar"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintStart_toEndOf="@+id/total_rating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
 
     <View
-        android:id="@+id/divider"
+        android:id="@+id/divider_portion"
         android:layout_width="360dp"
         android:layout_height="1dp"
         android:layout_marginStart="25dp"
@@ -119,10 +119,10 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/doctor_img" />
 
     <RatingBar
-        android:id="@+id/ratingBar2"
+        android:id="@+id/initial_rating"
         android:layout_width="248dp"
         android:layout_height="57dp"
         android:layout_marginStart="81dp"
@@ -132,10 +132,10 @@
         android:rating="3.5"
         android:secondaryProgressTint="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/divider_portion" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/feedback_text"
         android:layout_width="368dp"
         android:layout_height="165dp"
         android:layout_marginStart="25dp"
@@ -146,10 +146,10 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/initial_rating" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/feedback_button"
         android:layout_width="367dp"
         android:layout_height="49dp"
         android:layout_marginStart="25dp"
@@ -161,7 +161,7 @@
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
